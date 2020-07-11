@@ -1,0 +1,145 @@
+// Fonts here
+// see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-MediumItalic.eot");
+  src: url("../fonts/graphik/Graphik-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-MediumItalic.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-MediumItalic.woff") format("woff"),
+    url("../fonts/graphik/Graphik-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Light.eot");
+  src: url("../fonts/graphik/Graphik-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-Light.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-Light.woff") format("woff"),
+    url("../fonts/graphik/Graphik-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-BoldItalic.eot");
+  src: url("../fonts/graphik/Graphik-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-BoldItalic.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-BoldItalic.woff") format("woff"),
+    url("../fonts/graphik/Graphik-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Regular.eot");
+  src: url("../fonts/graphik/Graphik-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-Regular.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-Regular.woff") format("woff"),
+    url("../fonts/graphik/Graphik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Semibold.eot");
+  src: url("../fonts/graphik/Graphik-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-Semibold.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-Semibold.woff") format("woff"),
+    url("../fonts/graphik/Graphik-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Bold.eot");
+  src: url("../fonts/graphik/Graphik-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-Bold.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-Bold.woff") format("woff"),
+    url("../fonts/graphik/Graphik-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Medium.eot");
+  src: url("../fonts/graphik/Graphik-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-Medium.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-Medium.woff") format("woff"),
+    url("../fonts/graphik/Graphik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Black.eot");
+  src: url("../fonts/graphik/Graphik-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/graphik/Graphik-Black.woff2") format("woff2"),
+    url("../fonts/graphik/Graphik-Black.woff") format("woff"),
+    url("../fonts/graphik/Graphik-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?ji081e");
+  src: url("../fonts/icomoon/icomoon.eot?ji081e#iefix")
+      format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf?ji081e") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff?ji081e") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-insta:before {
+  content: "\e901";
+}
+.icon-rss:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e903";
+}
+.icon-twitter:before {
+  content: "\e904";
+}
+.icon-youtube:before {
+  content: "\e905";
+}

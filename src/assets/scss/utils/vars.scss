@@ -1,0 +1,48 @@
+// Font
+$mainFont: "Graphik", Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontColor: #101010;
+$mainFontSize: 18px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+
+$desktopWidth: 1250px;
+$smDesktopWidth: 980px;
+$tableWidth: 768px;
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;
+
+// Main color
+$default-color: #ffffff;
+$primary-color: #444ce0;
+$success-color: #26de81;
+$danger-color: #fc5c65;
+$warning-color: #fed330;
+$light-color: #999999;
+$purple-color: #8854d0;
+$cyan-color: #00cec2;
+$cyan-dark-color: #1cada8;
+$grey-color: #cbcbcb;
+$black-color: #000000;
+$red-color: #ce0000;
+$dark-grey-color: #8e8e8d;
+$light-grey-color: #f2f2f2;
+
+// Neutral Color
+$neutral-primary: #303133;
+$neutral-regular: #606266;
+$neutral-secondary: #909399;
+$neutral-placeholder: #c0c4cc;
+
+// Border Color
+$border-base: #e5e5e5;
+$border-light: #e4e7ed;
+$border-lighter: #ebeef5;
+$border-lightex: #f2f6fc;
+
+// Base Classes
+%base-button {
+  border-radius: 5px;
+  min-width: 146px;
+}

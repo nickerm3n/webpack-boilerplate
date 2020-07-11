@@ -1,0 +1,80 @@
+$screen-xs-min: 320px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-ln-min: 1024px;
+$screen-xl-min: 1200px;
+
+// A map of breakpoints.
+$breakpoints: (
+  xs: $screen-xs-min,
+  sm: $screen-sm-min,
+  // Small tablets and large smartphones (landscape view)
+    md: $screen-md-min,
+  // Small tablets (portrait view)
+    lg: $screen-lg-min,
+  // Small desktops
+    ln: $screen-ln-min,
+  // Large tablets and desktops
+    xl: $screen-xl-min,
+  // Large tablets and desktops,
+);
+
+@mixin breakpoint($breakpoint, $direction: min) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @if $direction == max {
+      @media (max-width: ($breakpoint-value - 1)) {
+        @content;
+      }
+    } @else if $direction == min {
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    }
+
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+    @if $direction == max {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
+    } @else if $direction == min {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin sm {
+  @include breakpoint($screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin md {
+  @include breakpoint($screen-md-min) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include breakpoint($screen-lg-min) {
+    @content;
+  }
+}
+
+@mixin ln {
+  @include breakpoint($screen-ln-min) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @include breakpoint($screen-xl-min) {
+    @content;
+  }
+}

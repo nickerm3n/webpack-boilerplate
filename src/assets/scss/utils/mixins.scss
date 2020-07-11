@@ -1,0 +1,101 @@
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin pos(
+  $pos: absolute,
+  $t: false,
+  $r: false,
+  $b: false,
+  $l: false,
+  $z: false
+) {
+  position: $pos;
+  @if $t {
+    top: $t;
+  }
+  @if $r {
+    right: $r;
+  }
+  @if $b {
+    bottom: $b;
+  }
+  @if $l {
+    left: $l;
+  }
+  @if $z {
+    z-index: $z;
+  }
+}
+
+@mixin font($fs, $fw: false, $lh: false) {
+  font-size: rem($fs);
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+@mixin pos(
+  $pos: absolute,
+  $t: false,
+  $r: false,
+  $b: false,
+  $l: false,
+  $z: false
+) {
+  position: $pos;
+  @if $t {
+    top: $t;
+  }
+  @if $r {
+    right: $r;
+  }
+  @if $b {
+    bottom: $b;
+  }
+  @if $l {
+    left: $l;
+  }
+  @if $z {
+    z-index: $z;
+  }
+}
+
+@mixin borderDots() {
+  content: "";
+  @include pos($b: 0, $l: 0);
+  display: block;
+  height: 0;
+  width: 30px;
+  border-bottom: 1px dotted $grey-color;
+}
